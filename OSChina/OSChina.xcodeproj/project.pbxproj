@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5D9166E41FB1EB9500A3C56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9166E31FB1EB9500A3C56A /* AppDelegate.swift */; };
 		5D9166EB1FB1EB9500A3C56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9166EA1FB1EB9500A3C56A /* Assets.xcassets */; };
-		5D9166EE1FB1EB9500A3C56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9166EC1FB1EB9500A3C56A /* LaunchScreen.storyboard */; };
 		5D9167021FB1EED700A3C56A /* WATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167011FB1EED700A3C56A /* WATabBarController.swift */; };
 		5D9167051FB1F0B300A3C56A /* WAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167041FB1F0B300A3C56A /* WAView.swift */; };
 		5D9167071FB1F0C500A3C56A /* WAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167061FB1F0C500A3C56A /* WAViewController.swift */; };
@@ -19,6 +18,7 @@
 		5D9167131FB1FA2B00A3C56A /* WADiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167121FB1FA2B00A3C56A /* WADiscoverController.swift */; };
 		5D9167171FB1FA4C00A3C56A /* WAProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167161FB1FA4C00A3C56A /* WAProfileController.swift */; };
 		5D91671A1FB1FDF700A3C56A /* WATweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167191FB1FDF700A3C56A /* WATweetController.swift */; };
+		5DB25C661FB2169900BEF479 /* QorumLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB25C651FB2169900BEF479 /* QorumLogs.swift */; };
 		CB776DDFEC1F117AEF969743 /* Pods_OSChina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A1650A2AE77B6BDAF214C7 /* Pods_OSChina.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,6 @@
 		5D9166E01FB1EB9500A3C56A /* OSChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9166E31FB1EB9500A3C56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D9166EA1FB1EB9500A3C56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D9166ED1FB1EB9500A3C56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D9166EF1FB1EB9500A3C56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D9167011FB1EED700A3C56A /* WATabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WATabBarController.swift; sourceTree = "<group>"; };
 		5D9167041FB1F0B300A3C56A /* WAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAView.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		5D9167121FB1FA2B00A3C56A /* WADiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WADiscoverController.swift; sourceTree = "<group>"; };
 		5D9167161FB1FA4C00A3C56A /* WAProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAProfileController.swift; sourceTree = "<group>"; };
 		5D9167191FB1FDF700A3C56A /* WATweetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WATweetController.swift; sourceTree = "<group>"; };
+		5DB25C651FB2169900BEF479 /* QorumLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QorumLogs.swift; sourceTree = "<group>"; };
 		7C60E6682D6D09F0D5CE976B /* Pods-OSChina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSChina.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSChina/Pods-OSChina.release.xcconfig"; sourceTree = "<group>"; };
 		A8A1650A2AE77B6BDAF214C7 /* Pods_OSChina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSChina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,7 +93,6 @@
 				5D9166F91FB1EDCE00A3C56A /* Extension */,
 				5D9166E31FB1EB9500A3C56A /* AppDelegate.swift */,
 				5D9166EA1FB1EB9500A3C56A /* Assets.xcassets */,
-				5D9166EC1FB1EB9500A3C56A /* LaunchScreen.storyboard */,
 				5D9166EF1FB1EB9500A3C56A /* Info.plist */,
 			);
 			path = OSChina;
@@ -112,6 +111,7 @@
 		5D9166F61FB1EDCE00A3C56A /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				5DB25C641FB2168400BEF479 /* Log */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -220,6 +220,14 @@
 			path = Tweet;
 			sourceTree = "<group>";
 		};
+		5DB25C641FB2168400BEF479 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				5DB25C651FB2169900BEF479 /* QorumLogs.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		C6B1322D168E1A9DC340FD25 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D9166EE1FB1EB9500A3C56A /* LaunchScreen.storyboard in Resources */,
 				5D9166EB1FB1EB9500A3C56A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,22 +380,12 @@
 				5D9167021FB1EED700A3C56A /* WATabBarController.swift in Sources */,
 				5D91671A1FB1FDF700A3C56A /* WATweetController.swift in Sources */,
 				5D91670B1FB1F0FA00A3C56A /* WAViewModel.swift in Sources */,
+				5DB25C661FB2169900BEF479 /* QorumLogs.swift in Sources */,
 				5D9167111FB1FA1E00A3C56A /* WAColligateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5D9166EC1FB1EB9500A3C56A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D9166ED1FB1EB9500A3C56A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5D9166F01FB1EB9500A3C56A /* Debug */ = {

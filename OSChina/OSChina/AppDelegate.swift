@@ -28,6 +28,7 @@ extension AppDelegate {
     /// 初始化
    private func initialization() -> Void {
         setupRootVC()
+        QorumLogs.enabled = true
     }
     /// 设置根控制器
    private func setupRootVC() -> Void {

@@ -11,7 +11,12 @@ import UIKit
 class WATabBarController: UITabBarController {
     
      @objc private func clickComposeButton() {
-        print("点击撰写按钮")
+        QLShortLine()
+        QL1(self)
+        QL2(self)
+        QL3(self)
+        QL4(self)
+        QLShortLine()
     }
 
     // MARK: - 视图周期
