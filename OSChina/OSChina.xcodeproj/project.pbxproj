@@ -10,6 +10,11 @@
 		5D9166E41FB1EB9500A3C56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9166E31FB1EB9500A3C56A /* AppDelegate.swift */; };
 		5D9166EB1FB1EB9500A3C56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9166EA1FB1EB9500A3C56A /* Assets.xcassets */; };
 		5D9166EE1FB1EB9500A3C56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9166EC1FB1EB9500A3C56A /* LaunchScreen.storyboard */; };
+		5D9167021FB1EED700A3C56A /* WATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167011FB1EED700A3C56A /* WATabBarController.swift */; };
+		5D9167051FB1F0B300A3C56A /* WAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167041FB1F0B300A3C56A /* WAView.swift */; };
+		5D9167071FB1F0C500A3C56A /* WAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167061FB1F0C500A3C56A /* WAViewController.swift */; };
+		5D91670B1FB1F0FA00A3C56A /* WAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91670A1FB1F0FA00A3C56A /* WAViewModel.swift */; };
+		5D91670D1FB1F10600A3C56A /* WAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91670C1FB1F10600A3C56A /* WAModel.swift */; };
 		CB776DDFEC1F117AEF969743 /* Pods_OSChina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A1650A2AE77B6BDAF214C7 /* Pods_OSChina.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +25,11 @@
 		5D9166EA1FB1EB9500A3C56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D9166ED1FB1EB9500A3C56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D9166EF1FB1EB9500A3C56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D9167011FB1EED700A3C56A /* WATabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WATabBarController.swift; sourceTree = "<group>"; };
+		5D9167041FB1F0B300A3C56A /* WAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAView.swift; sourceTree = "<group>"; };
+		5D9167061FB1F0C500A3C56A /* WAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewController.swift; sourceTree = "<group>"; };
+		5D91670A1FB1F0FA00A3C56A /* WAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewModel.swift; sourceTree = "<group>"; };
+		5D91670C1FB1F10600A3C56A /* WAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAModel.swift; sourceTree = "<group>"; };
 		7C60E6682D6D09F0D5CE976B /* Pods-OSChina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSChina.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSChina/Pods-OSChina.release.xcconfig"; sourceTree = "<group>"; };
 		A8A1650A2AE77B6BDAF214C7 /* Pods_OSChina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSChina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +94,9 @@
 		5D9166F51FB1EDCE00A3C56A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5D9167091FB1F0DB00A3C56A /* Model */,
+				5D9167081FB1F0D100A3C56A /* ViewModel */,
+				5D9167031FB1F08A00A3C56A /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -98,6 +111,7 @@
 		5D9166F71FB1EDCE00A3C56A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5D9167011FB1EED700A3C56A /* WATabBarController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -167,6 +181,31 @@
 			children = (
 			);
 			path = Colligate;
+			sourceTree = "<group>";
+		};
+		5D9167031FB1F08A00A3C56A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D9167041FB1F0B300A3C56A /* WAView.swift */,
+				5D9167061FB1F0C500A3C56A /* WAViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D9167081FB1F0D100A3C56A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D91670A1FB1F0FA00A3C56A /* WAViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D9167091FB1F0DB00A3C56A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D91670C1FB1F10600A3C56A /* WAModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C6B1322D168E1A9DC340FD25 /* Pods */ = {
@@ -313,7 +352,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9167071FB1F0C500A3C56A /* WAViewController.swift in Sources */,
+				5D9167051FB1F0B300A3C56A /* WAView.swift in Sources */,
 				5D9166E41FB1EB9500A3C56A /* AppDelegate.swift in Sources */,
+				5D91670D1FB1F10600A3C56A /* WAModel.swift in Sources */,
+				5D9167021FB1EED700A3C56A /* WATabBarController.swift in Sources */,
+				5D91670B1FB1F0FA00A3C56A /* WAViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
