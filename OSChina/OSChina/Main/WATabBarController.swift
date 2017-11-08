@@ -10,15 +10,11 @@ import UIKit
 
 class WATabBarController: UITabBarController {
     
-     @objc private func clickComposeButton() {
-        QLShortLine()
+    /// 撰写按钮点击事件
+    @objc private func clickComposeButton() {
         QL1(self)
-        QL2(self)
-        QL3(self)
-        QL4(self)
-        QLShortLine()
     }
-
+    
     // MARK: - 视图周期
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,8 +66,8 @@ extension WATabBarController {
         addChildViewController(controller: WAColligateController(), name: "综合", imageName: "tabbar-news")
         addChildViewController(controller: WATweetController(), name: "动弹", imageName: "tabbar-tweet")
         addChildViewController(WAViewController())
-        addChildViewController(controller: WAColligateController(), name: "发现", imageName: "tabbar-discover")
-        addChildViewController(controller: WAColligateController(), name: "我的", imageName: "tabbar-me")
+        addChildViewController(controller: WADiscoverController(), name: "发现", imageName: "tabbar-discover")
+        addChildViewController(controller: WAProfileController(), name: "我的", imageName: "tabbar-me")
     }
     
     /// 设置子控制器
@@ -85,6 +81,10 @@ extension WATabBarController {
         let navController = UINavigationController(rootViewController: controller)
         navController.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         navController.tabBarItem.selectedImage = UIImage(named: imageName + "-selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        // 设置导航栏背景颜色
+        navController.navigationBar.barTintColor = UIColor(red: 55/255, green: 186/255, blue: 89/255, alpha: 1)
+        // 设置导航栏文本颜色
+        navController.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         addChildViewController(navController)
     }
 }

@@ -27,13 +27,16 @@ extension AppDelegate {
     
     /// 初始化
    private func initialization() -> Void {
-        setupRootVC()
+        // 配置打印输出
         QorumLogs.enabled = true
+        // 设置根控制器
+        setupRootVC()
+    
     }
     /// 设置根控制器
    private func setupRootVC() -> Void {
-    window = UIWindow(frame: UIScreen.main.bounds)
-    window?.rootViewController = WATabBarController()
-    window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = WATabBarController()
+        window?.makeKeyAndVisible()
     }
 }

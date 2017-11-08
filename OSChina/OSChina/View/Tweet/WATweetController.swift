@@ -9,27 +9,31 @@
 import UIKit
 
 class WATweetController: WAViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+        // 设置UI
+        setupUI()
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+// MARK: - 设置页面
+extension WATweetController {
+    
+    /// 设置UI
+    private func setupUI() {
+        // 设置导航栏
+        setupNavigation()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    /// 设置导航栏
+    private func setupNavigation() {
+        let searchButton = UIButton()
+        searchButton.setImage(UIImage(named:"navigationbar-search"), for: UIControlState.normal)
+        searchButton.sizeToFit()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
     }
-    */
-
 }
