@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D088BF11FB32498002967BB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D088BF01FB32498002967BB /* API.swift */; };
+		5D088BF41FB3257E002967BB /* WALoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D088BF31FB3257E002967BB /* WALoginController.swift */; };
+		5D088BF61FB32F59002967BB /* WALoginTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D088BF51FB32F59002967BB /* WALoginTextFiled.swift */; };
 		5D9166E41FB1EB9500A3C56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9166E31FB1EB9500A3C56A /* AppDelegate.swift */; };
 		5D9166EB1FB1EB9500A3C56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9166EA1FB1EB9500A3C56A /* Assets.xcassets */; };
 		5D9167021FB1EED700A3C56A /* WATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167011FB1EED700A3C56A /* WATabBarController.swift */; };
@@ -19,11 +22,15 @@
 		5D9167171FB1FA4C00A3C56A /* WAProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167161FB1FA4C00A3C56A /* WAProfileController.swift */; };
 		5D91671A1FB1FDF700A3C56A /* WATweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9167191FB1FDF700A3C56A /* WATweetController.swift */; };
 		5DB25C661FB2169900BEF479 /* QorumLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB25C651FB2169900BEF479 /* QorumLogs.swift */; };
+		5DCDC0A01FB2984900A0E242 /* WANetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC09F1FB2984900A0E242 /* WANetworkTools.swift */; };
 		CB776DDFEC1F117AEF969743 /* Pods_OSChina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A1650A2AE77B6BDAF214C7 /* Pods_OSChina.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26F856A9DE716D1FFC0C0E81 /* Pods-OSChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSChina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSChina/Pods-OSChina.debug.xcconfig"; sourceTree = "<group>"; };
+		5D088BF01FB32498002967BB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5D088BF31FB3257E002967BB /* WALoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALoginController.swift; sourceTree = "<group>"; };
+		5D088BF51FB32F59002967BB /* WALoginTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALoginTextFiled.swift; sourceTree = "<group>"; };
 		5D9166E01FB1EB9500A3C56A /* OSChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9166E31FB1EB9500A3C56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D9166EA1FB1EB9500A3C56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +45,7 @@
 		5D9167161FB1FA4C00A3C56A /* WAProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAProfileController.swift; sourceTree = "<group>"; };
 		5D9167191FB1FDF700A3C56A /* WATweetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WATweetController.swift; sourceTree = "<group>"; };
 		5DB25C651FB2169900BEF479 /* QorumLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QorumLogs.swift; sourceTree = "<group>"; };
+		5DCDC09F1FB2984900A0E242 /* WANetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WANetworkTools.swift; sourceTree = "<group>"; };
 		7C60E6682D6D09F0D5CE976B /* Pods-OSChina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSChina.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSChina/Pods-OSChina.release.xcconfig"; sourceTree = "<group>"; };
 		A8A1650A2AE77B6BDAF214C7 /* Pods_OSChina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSChina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -60,6 +68,22 @@
 				A8A1650A2AE77B6BDAF214C7 /* Pods_OSChina.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D088BEF1FB32479002967BB /* config */ = {
+			isa = PBXGroup;
+			children = (
+				5D088BF01FB32498002967BB /* API.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		5D088BF21FB3255B002967BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5D088BF31FB3257E002967BB /* WALoginController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		5D9166D71FB1EB9500A3C56A = {
@@ -101,6 +125,7 @@
 		5D9166F51FB1EDCE00A3C56A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5D088BEF1FB32479002967BB /* config */,
 				5D9167091FB1F0DB00A3C56A /* Model */,
 				5D9167081FB1F0D100A3C56A /* ViewModel */,
 				5D9167031FB1F08A00A3C56A /* View */,
@@ -127,6 +152,7 @@
 		5D9166F81FB1EDCE00A3C56A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5DCDC09E1FB2981400A0E242 /* Network */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -148,6 +174,7 @@
 		5D9166FB1FB1EDFC00A3C56A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5D088BF21FB3255B002967BB /* Login */,
 				5D9167001FB1EE1400A3C56A /* Colligate */,
 				5D9166FD1FB1EE1400A3C56A /* Discover */,
 				5D9167181FB1FDF700A3C56A /* Tweet */,
@@ -192,6 +219,7 @@
 			children = (
 				5D9167041FB1F0B300A3C56A /* WAView.swift */,
 				5D9167061FB1F0C500A3C56A /* WAViewController.swift */,
+				5D088BF51FB32F59002967BB /* WALoginTextFiled.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +254,14 @@
 				5DB25C651FB2169900BEF479 /* QorumLogs.swift */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		5DCDC09E1FB2981400A0E242 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5DCDC09F1FB2984900A0E242 /* WANetworkTools.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C6B1322D168E1A9DC340FD25 /* Pods */ = {
@@ -372,15 +408,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9167131FB1FA2B00A3C56A /* WADiscoverController.swift in Sources */,
+				5D088BF61FB32F59002967BB /* WALoginTextFiled.swift in Sources */,
 				5D9167071FB1F0C500A3C56A /* WAViewController.swift in Sources */,
 				5D9167171FB1FA4C00A3C56A /* WAProfileController.swift in Sources */,
 				5D9167051FB1F0B300A3C56A /* WAView.swift in Sources */,
 				5D9166E41FB1EB9500A3C56A /* AppDelegate.swift in Sources */,
 				5D91670D1FB1F10600A3C56A /* WAModel.swift in Sources */,
 				5D9167021FB1EED700A3C56A /* WATabBarController.swift in Sources */,
+				5D088BF41FB3257E002967BB /* WALoginController.swift in Sources */,
 				5D91671A1FB1FDF700A3C56A /* WATweetController.swift in Sources */,
+				5D088BF11FB32498002967BB /* API.swift in Sources */,
 				5D91670B1FB1F0FA00A3C56A /* WAViewModel.swift in Sources */,
 				5DB25C661FB2169900BEF479 /* QorumLogs.swift in Sources */,
+				5DCDC0A01FB2984900A0E242 /* WANetworkTools.swift in Sources */,
 				5D9167111FB1FA1E00A3C56A /* WAColligateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

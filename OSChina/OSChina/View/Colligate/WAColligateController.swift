@@ -29,6 +29,7 @@ extension WAColligateController {
         // 设置导航栏
         setupNavigation()
     }
+    // 添加collectionview
     
     /// 设置导航栏
     private func setupNavigation() {

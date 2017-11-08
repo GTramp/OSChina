@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //  初始化
         initialization()
+        
+        WANetworkTools.shared.loadData(method: HTTPMethod.get, url: URL(string:"https://httpbin.org/get")!, parameters: nil) { (resp, isSucceed) in
+            QL2(resp)
+        }
+        
         return true
     }
 
@@ -36,7 +42,7 @@ extension AppDelegate {
     /// 设置根控制器
    private func setupRootVC() -> Void {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = WATabBarController()
+        window?.rootViewController = WANetworkTools.shared.logan ? WATabBarController() : WALoginController()
         window?.makeKeyAndVisible()
     }
 }
